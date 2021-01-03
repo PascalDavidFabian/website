@@ -1,6 +1,6 @@
 library(shiny)
 library(tidyverse)
-#library(wordcloud2)
+library(wordcloud2)
 library(forcats)
 
 all_files <- list.files("utils/about_me_ui") %>% 
