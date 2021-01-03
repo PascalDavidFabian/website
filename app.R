@@ -348,17 +348,17 @@ server <- function(input, output, session) {
     })
     
     # autoInvalidate <- reactiveTimer(5000, session)
-    # output$wordcloud <- wordcloud2::renderWordcloud2({
-    # 
-    # 
-    #     # autoInvalidate()
-    #     df <- data.frame(word = c("R", "RStudio", "R Shiny", "Python", "C++", "SQL", "Markdown", "CSS", "Docker", "AWS", "Version Control",
-    #                               "Statistical Analysis", "Machine Learning", "pandas", "tidyverse", "tidymodels", "shinyjs",
-    #                               "flexdashboard", "Rcpp", "RSelenium", "Web Scraping", "scikit-learn", "NumPy"),
-    #                      freq = sample(x = 5:30, size = 23))
-    #     wordcloud2::wordcloud2(data = df, color = "random-light", size = 0.5)
-    # 
-    # })
+    output$wordcloud <- wordcloud2::renderWordcloud2({
+
+
+        # autoInvalidate()
+        df <- data.frame(word = c("R", "RStudio", "R Shiny", "Python", "C++", "SQL", "Markdown", "CSS", "Docker", "AWS", "Version Control",
+                                  "Statistical Analysis", "Machine Learning", "pandas", "tidyverse", "tidymodels", "shinyjs",
+                                  "flexdashboard", "Rcpp", "RSelenium", "Web Scraping", "scikit-learn", "NumPy"),
+                         freq = sample(x = 5:30, size = 23))
+        wordcloud2::wordcloud2(data = df, color = "random-light", size = 0.5)
+
+    })
     
 }
 
